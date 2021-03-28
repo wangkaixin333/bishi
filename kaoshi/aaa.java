@@ -7,6 +7,7 @@ public class aaa {
     public static void main(String[] args) {
         System.out.println("aiyingxin");
         System.out.println("wfg");
+        System.out.println("wfg");
         }
     }
 
