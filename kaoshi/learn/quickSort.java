@@ -3,8 +3,8 @@ package learn;
 import java.util.Arrays;
     public class quickSort {
         public static void main(String[] args) {
-            int[] mySort = {12, 4, 6, 89, 3, 9};
-            quickSort(mySort,0,5);
+            int[] mySort = {12, 4, 6, 89, 3, 9,12,5,9,5};
+            quickSort(mySort,0,9);
             System.out.println(Arrays.toString(mySort));//数组转化成字符串
         }
 
