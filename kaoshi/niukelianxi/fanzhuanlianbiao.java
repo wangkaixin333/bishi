@@ -1,5 +1,5 @@
 package niukelianxi;
-
+//翻转链表
 public class fanzhuanlianbiao {
     public static void main(String[] args) {
 

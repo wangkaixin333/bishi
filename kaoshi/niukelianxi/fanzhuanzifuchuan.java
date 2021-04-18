@@ -12,8 +12,6 @@ public class fanzhuanzifuchuan {
             chars[left] = chars[right];
             chars[right] = temp;
         }
-
         return new String(chars);
-
     }
 }
