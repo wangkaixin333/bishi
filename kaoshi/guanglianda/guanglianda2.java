@@ -8,17 +8,16 @@ public class guanglianda2 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int n = read.nextInt();
-        int shuzu[][] = new int[n][n];
+        char shuzu[][] = new char[n][n];
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                shuzu[i][j] = read.nextInt();
-            }
+            shuzu[i] = read.next().toCharArray();
+
         }
         spiralOrder(shuzu);
 
     }
-    public static List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> order = new ArrayList<Integer>();
+    public static List<Character> spiralOrder(char[][] matrix) {
+        List<Character> order = new ArrayList<Character>();
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
             return order;
         }
@@ -30,8 +29,8 @@ public class guanglianda2 {
         int directionIndex = 0;
         for (int i = 0; i < total; i++) {
             order.add(matrix[row][column]);
-            if (matrix[row][column] != 0) {
-                System.out.print(matrix[row][column]);
+            if (matrix[row][column] != '0') {
+                System.out.println(matrix[row][column]);
             }
             visited[row][column] = true;
             int nextRow = row + directions[directionIndex][0], nextColumn = column + directions[directionIndex][1];
