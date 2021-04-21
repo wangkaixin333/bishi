@@ -16,10 +16,10 @@ public class guanglianda2 {
         spiralOrder(shuzu);
 
     }
-    public static List<Character> spiralOrder(char[][] matrix) {
-        List<Character> order = new ArrayList<Character>();
+    public static void spiralOrder(char[][] matrix) {
+
         if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
-            return order;
+            return;
         }
         int rows = matrix.length, columns = matrix[0].length;
         boolean[][] visited = new boolean[rows][columns];
@@ -28,7 +28,7 @@ public class guanglianda2 {
         int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int directionIndex = 0;
         for (int i = 0; i < total; i++) {
-            order.add(matrix[row][column]);
+
             if (matrix[row][column] != '0') {
                 System.out.println(matrix[row][column]);
             }
@@ -41,7 +41,7 @@ public class guanglianda2 {
             column += directions[directionIndex][1];
 
         }
-        return order;
+
     }
 }
 
