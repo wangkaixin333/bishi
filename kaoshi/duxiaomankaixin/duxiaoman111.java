@@ -13,7 +13,7 @@ public class duxiaoman111 {
             System.out.println(cat);
         } else if (getSimilarityRatio(shuru, pig) > 0.66) {
             System.out.println(pig);
-        } else {
+        } else if(getSimilarityRatio(shuru, pig) > 0.8){
             System.out.println(horse);
 
         }
