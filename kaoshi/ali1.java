@@ -11,11 +11,17 @@ public class ali1 {
     }
 
     public static void jisuan(int n) {
-        double j = Math.cbrt(n);
-        for (int x = 0; x < j; x++) {
-            for (int y = x; y < j; y++) {
-                if (((y * y + y) / 2) * ((y * y + y) / 2) - (((x * x + x) / 2) * ((x * x + x) / 2)) == n) {
-                    System.out.println(x+1+" "+y);
+        int j = (int) Math.cbrt(n);
+        if (j * j * j == n) {
+            System.out.println(j + " " + j);
+
+        }
+        else {
+            for (int x = 0; x <= j; x++) {
+                for (int y = x; y <= j; y++) {
+                    if (((y * y + y) / 2) * ((y * y + y) / 2) - (((x * x + x) / 2) * ((x * x + x) / 2)) == n) {
+                        System.out.println(x + 1 + " " + y);
+                    }
                 }
             }
         }
