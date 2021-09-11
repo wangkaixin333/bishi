@@ -6,7 +6,7 @@ public class meituan1 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int zushu = read.nextInt();
-        for (int i = 0; i < zushu; i++) {
+        for (int j = 0; j <= zushu; j++) {
             int a = read.nextInt();
             int b = read.nextInt();
             jisuan(a, b);
@@ -25,7 +25,7 @@ public class meituan1 {
                 min = min + i;
             }
             if (min == max) {
-                System.out.println(i);
+                System.out.println(i-1);
             } else {
                 i--;
                 min = min - i;
