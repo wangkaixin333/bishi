@@ -7,6 +7,8 @@ public class jingdong2 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int n = read.nextInt();
+        int cout = 0;
+        int zhanli = 0;
         List<int[]> list = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             int yi = read.nextInt();
@@ -22,8 +24,14 @@ public class jingdong2 {
 
         }
         for (int[] shuz2 : list) {
-            System.out.println(shuz2[0] + " " + shuz2[1]);
+            System.out.println(shuz2[0]+" "+shuz2[1]);
+            if (zhanli < shuz2[0]) {
+                cout += (shuz2[0] - zhanli);
+            } else {
+                zhanli += shuz2[1];
+            }
         }
+        System.out.println(cout);
 
 
 
