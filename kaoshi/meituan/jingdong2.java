@@ -27,6 +27,7 @@ public class jingdong2 {
             System.out.println(shuz2[0]+" "+shuz2[1]);
             if (zhanli < shuz2[0]) {
                 cout += (shuz2[0] - zhanli);
+                zhanli+=(shuz2[0] - zhanli)+ shuz2[1];
             } else {
                 zhanli += shuz2[1];
             }
@@ -34,14 +35,6 @@ public class jingdong2 {
         System.out.println(cout);
 
 
-
-
-       /* Set set=phone.keySet();
-        Object[] arr=set.toArray();
-        Arrays.sort(arr);
-        for(Object key:arr){
-            System.out.println(key);
-        }*/
 
     }
     }

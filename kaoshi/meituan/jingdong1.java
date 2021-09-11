@@ -1,3 +1,5 @@
+package meituan;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -5,7 +7,7 @@ import java.util.Scanner;
  * @author keboom
  * @date 2021/9/11
  */
-public class Solution1 {
+class jigndong1 {
 
     static class Location {
         public int x;
