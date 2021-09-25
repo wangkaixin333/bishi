@@ -15,6 +15,7 @@ public class jingdong2 {
             int er = read.nextInt();
             int[] shuzu = {yi, er};
             list.add(shuzu);
+
             Collections.sort(list, new Comparator<int[]>() {
                 @Override
                 public int compare(int[] o1, int[] o2) {
