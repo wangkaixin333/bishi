@@ -1,0 +1,36 @@
+package tengxun;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class dierti {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int zushu = sc.nextInt();
+        for (int i = 0; i < zushu; i++) {
+            int geshu = sc.nextInt();
+            int shuzu[] = new int[geshu];
+            int fenshu[] = new int[geshu];
+            for (int j = 0; j <geshu ; j++) {
+                shuzu[j] = sc.nextInt();
+            }
+
+
+            for (int x = 0; x < geshu; x++) {
+
+                 for (int j =x; j <geshu;j=j+shuzu[j]) {
+
+                    fenshu[x] += shuzu[j];
+
+                }
+            }
+            Arrays.sort(fenshu);
+
+            System.out.println(fenshu[fenshu.length-1]);
+
+        }
+
+
+    }
+    }
+
