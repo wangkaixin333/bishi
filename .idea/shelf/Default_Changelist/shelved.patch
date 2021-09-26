@@ -1,0 +1,76 @@
+Index: kaoshi/aaa.java
+===================================================================
+diff --git a/kaoshi/aaa.java b/kaoshi/aaa.java
+deleted file mode 100644
+--- a/kaoshi/aaa.java	(revision 3fa4c6f7d93e51d7000e21d3356f96a637ad3222)
++++ /dev/null	(revision 3fa4c6f7d93e51d7000e21d3356f96a637ad3222)
+@@ -1,52 +0,0 @@
+-import java.lang.reflect.Array;
+-import java.text.DecimalFormat;
+-import java.util.Arrays;
+-import java.util.Scanner;
+-
+-public class aaa {
+-    public static void main(String[] args) {
+-        Scanner scan = new Scanner(System.in);
+-        int n = scan.nextInt();
+-        int m = scan.nextInt();
+-        double shuzu[][] = new double[n+2][m+2];
+-        for (int i = 1; i <= n; i++) {
+-            for (int j = 1; j <= m; j++) {
+-                shuzu[i][j] = scan.nextDouble();
+-            }
+-        }
+-        for (int i = 1; i <= n; i++) {
+-            for (int j = 1; j <= m; j++) {
+-                int jigeshu = 1;
+-                int he = 0;
+-                if (shuzu[i - 1][j] != 0) {
+-                    he += shuzu[i - 1][j];
+-                    jigeshu++;
+-                }
+-                if (shuzu[i+1][j] != 0) {
+-                    he += shuzu[i+1][j];
+-                    jigeshu++;
+-                }if (shuzu[i][j-1] != 0) {
+-                    he += shuzu[i][j-1];
+-                    jigeshu++;
+-                }if (shuzu[i][j+1] != 0) {
+-                    he += shuzu[i][j+1];
+-                    jigeshu++;
+-                }
+-                shuzu[i][j] = Math.round((he+shuzu[i][j]) / (jigeshu));
+-            }
+-        }
+-        
+-        
+-        for (int i = 1; i <= n; i++) {
+-            for (int j = 1; j <= m; j++) {
+-
+-                System.out.print((int)shuzu[i][j]+" ");
+-            }
+-            System.out.println();
+-        }
+-
+-    }
+-    
+-    }
+-
+-
+Index: kaoshi/Baidu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Baidu {\r\n    public static void main(String[] args) {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/kaoshi/Baidu.java b/kaoshi/Baidu.java
+--- a/kaoshi/Baidu.java	(revision 3fa4c6f7d93e51d7000e21d3356f96a637ad3222)
++++ b/kaoshi/Baidu.java	(date 1617109853320)
+@@ -1,5 +1,6 @@
+ public class Baidu {
+     public static void main(String[] args) {
+ 
++
+     }
+ }
