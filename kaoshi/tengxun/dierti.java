@@ -11,14 +11,14 @@ public class dierti {
             int geshu = sc.nextInt();
             int shuzu[] = new int[geshu];
             int fenshu[] = new int[geshu];
-            for (int j = 0; j <geshu ; j++) {
+            for (int j = 0; j < geshu; j++) {
                 shuzu[j] = sc.nextInt();
             }
 
 
             for (int x = 0; x < geshu; x++) {
 
-                 for (int j =x; j <geshu;j=j+shuzu[j]) {
+                for (int j = x; j < geshu; j = j + shuzu[j]) {
 
                     fenshu[x] += shuzu[j];
 
@@ -26,11 +26,11 @@ public class dierti {
             }
             Arrays.sort(fenshu);
 
-            System.out.println(fenshu[fenshu.length-1]);
+            System.out.println(fenshu[fenshu.length - 1]);
 
         }
 
 
     }
-    }
+}
 
