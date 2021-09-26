@@ -24,9 +24,13 @@ public class dierti {
 
                 }
             }
-            Arrays.sort(fenshu);
-
-            System.out.println(fenshu[fenshu.length - 1]);
+            int sum = fenshu[0];
+            for (int y = 0; y < fenshu.length; i++){
+                if (sum < fenshu[y]){
+                    sum = fenshu[y];
+                }
+            }
+            System.out.println(sum);
 
         }
 
