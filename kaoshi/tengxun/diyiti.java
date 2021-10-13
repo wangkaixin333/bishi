@@ -17,7 +17,7 @@ public class diyiti {
                     sites.add(i);
                 }
             }
-            System.out.println(sites); //a的因子存放在sites里
+            System.out.println(sites);
 
             ArrayList<Integer> list = new ArrayList<>();
             int start = sites.get(0);
