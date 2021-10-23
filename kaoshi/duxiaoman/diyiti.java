@@ -18,7 +18,7 @@ public class diyiti {
 
             }
         }
-        System.out.println(i-1+' '+jinbishu);
+        System.out.println(i-1+" "+jinbishu);
         
     }
 }
